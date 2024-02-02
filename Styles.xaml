@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Style de bonton arrondi -->
+    <Style x:Key="RoundedButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5">
+
+                        <ContentPresenter 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Content="{TemplateBinding Content}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- Style de bouton arrondi avec ombre -->
+    <Style x:Key="RoundedButtonShadow" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <!-- Conteneur pour l'effet d'ombre -->
+                        <Border CornerRadius="5"
+                            Background="{TemplateBinding Background}"
+                            Margin="0">
+                            <Border.Effect>
+                                <DropShadowEffect Color="Gray" Opacity="0.5" BlurRadius="5" ShadowDepth="1"/>
+                            </Border.Effect>
+                        </Border>
+
+                        <!-- Conteneur pour le contenu du bouton -->
+                        <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5"
+                            Height="40"
+                            Width="80">
+                            
+                            <ContentPresenter 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Content="{TemplateBinding Content}"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="BasicText" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="3dsLight"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+</ResourceDictionary>

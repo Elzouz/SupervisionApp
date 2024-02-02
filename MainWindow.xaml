@@ -1,0 +1,75 @@
+﻿<Window x:Class="SupervisionApp.MainWindow"
+        x:Name="Main_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SupervisionApp"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        MinWidth="550"
+        MinHeight="500"
+        WindowState="Maximized" Background="#FFE9F4F4">
+
+    <!-- On utilise une grille avec 3 lignes pour placer nos éléments en haut à gauche, au  centre, et en bas à droite de l'écran
+de manière responsive selon le dimensionnement de la fenêtre -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Bandeau de couleur derrière le logo -->
+        <Rectangle Fill="White" Height="40" VerticalAlignment="Top" Grid.Row="0" />
+
+        <!-- Logo -->
+        <Image Source="/diduenjoy_logo.png" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top"
+               Margin="10" 
+               Width="100" 
+               Height="100" 
+               Grid.Row="0"/>
+
+        <Label 
+            Content="Supervision App" 
+            Margin="5"
+            Grid.Row="0"
+            Height="40" 
+            Width="Auto" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" 
+            FontFamily="3ds Light" FontSize="20" FontWeight="DemiBold"/>
+
+
+        <Border CornerRadius="10"  Grid.Row="1" Margin="50, 0, 50, 0" Background="White">
+            <Frame x:Name="Main"
+                   Grid.Row="1"
+                   Margin="0"
+                   NavigationUIVisibility="Hidden"
+                   Background="Transparent">
+            </Frame>
+        </Border>
+
+        <Button 
+            Grid.Row="2"
+            x:Name="SuivantBtn" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" 
+            Style="{StaticResource RoundedButtonShadow}"
+            Margin="50" 
+            Click="SuivantBtn_Click">
+
+            <TextBlock 
+                TextWrapping="Wrap" TextAlignment="Center"
+                Style="{StaticResource BasicText}">
+                    Suivant
+            </TextBlock>
+        </Button>
+
+
+    </Grid>
+</Window>
+
+

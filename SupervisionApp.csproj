@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="diduenjoy_logo.png" />
+    <None Remove="Pages\validIcon.jpg" />
+    <None Remove="Pages\validIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="diduenjoy_logo.png" />
+    <Resource Include="Pages\validIcon.png" />
+  </ItemGroup>
+
+</Project>

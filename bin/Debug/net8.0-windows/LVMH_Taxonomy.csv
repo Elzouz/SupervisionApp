@@ -1,0 +1,278 @@
+name;type
+LVMH CSC > After Sales;CSC
+LVMH CSC > After Sales > Internal Policy;CSC
+LVMH CSC > After Sales > Refund;CSC
+LVMH CSC > After Sales > Repair;CSC
+LVMH CSC > After Sales > Return/Exchange;CSC
+LVMH CSC > After Sales > Warranty;CSC
+LVMH CSC > Brand;CSC
+LVMH CSC > Brand > General;CSC
+LVMH CSC > Checkout;CSC
+LVMH CSC > Checkout > Canceled Orders;CSC
+LVMH CSC > Checkout > General;CSC
+LVMH CSC > Customer Experience;CSC
+LVMH CSC > Customer Experience > General;CSC
+LVMH CSC > Customer Service;CSC
+LVMH CSC > Customer Service > Advisor Attitude;CSC
+LVMH CSC > Customer Service > Advisor Expertise;CSC
+LVMH CSC > Customer Service > Commitment Of Promise;CSC
+LVMH CSC > Customer Service > General;CSC
+LVMH CSC > Customer Service > Language Proficiency;CSC
+LVMH CSC > Customer Service > Proactivity;CSC
+LVMH CSC > Customer Service > Reachability;CSC
+LVMH CSC > Customer Service > Response Efficiency;CSC
+LVMH CSC > Customer Service > Response Time;CSC
+LVMH CSC > Delivery;CSC
+LVMH CSC > Delivery > Carrier;CSC
+LVMH CSC > Delivery > Delivery Status;CSC
+LVMH CSC > Delivery > Follow Up;CSC
+LVMH CSC > Delivery > General;CSC
+LVMH CSC > Delivery > Lost Parcel;CSC
+LVMH CSC > Delivery > Order Error;CSC
+LVMH CSC > Delivery > Price;CSC
+LVMH CSC > Delivery > Time;CSC
+LVMH CSC > Free Gifts;CSC
+LVMH CSC > Free Gifts > General;CSC
+LVMH CSC > N/A;CSC
+LVMH CSC > Omnichannel Experience;CSC
+LVMH CSC > Omnichannel Experience > Online;CSC
+LVMH CSC > Omnichannel Experience > Remote Sale;CSC
+LVMH CSC > Omnichannel Experience > Store Experience;CSC
+LVMH CSC > Packaging;CSC
+LVMH CSC > Packaging > General;CSC
+LVMH CSC > Packaging > Quality;CSC
+LVMH CSC > Price;CSC
+LVMH CSC > Price > Discounts;CSC
+LVMH CSC > Price > General;CSC
+LVMH CSC > Price > Price Increase;CSC
+LVMH CSC > Product;CSC
+LVMH CSC > Product > Assortment;CSC
+LVMH CSC > Product > Customization;CSC
+LVMH CSC > Product > Design;CSC
+LVMH CSC > Product > General;CSC
+LVMH CSC > Product > Quality;CSC
+LVMH CSC > Product > Size;CSC
+LVMH CSC > Stock;CSC
+LVMH CSC > Stock > General;CSC
+LVMH Delivery > After Sales;Delivery
+LVMH Delivery > After Sales > Refund;Delivery
+LVMH Delivery > After Sales > Return/Exchange;Delivery
+LVMH Delivery > Brand;Delivery
+LVMH Delivery > Brand > General;Delivery
+LVMH Delivery > Checkout;Delivery
+LVMH Delivery > Checkout > Canceled Orders;Delivery
+LVMH Delivery > Checkout > Email Confirmation;Delivery
+LVMH Delivery > Checkout > General;Delivery
+LVMH Delivery > Checkout > Payment Methods;Delivery
+LVMH Delivery > Customer Experience;Delivery
+LVMH Delivery > Customer Experience > General;Delivery
+LVMH Delivery > Customer Service;Delivery
+LVMH Delivery > Customer Service > Advisor Attitude;Delivery
+LVMH Delivery > Customer Service > Advisor Expertise;Delivery
+LVMH Delivery > Customer Service > General;Delivery
+LVMH Delivery > Customer Service > Reachability;Delivery
+LVMH Delivery > Customer Service > Response Efficiency;Delivery
+LVMH Delivery > Customer Service > Response Time;Delivery
+LVMH Delivery > Delivery;Delivery
+LVMH Delivery > Delivery > Carrier;Delivery
+LVMH Delivery > Delivery > Damages;Delivery
+LVMH Delivery > Delivery > Follow Up;Delivery
+LVMH Delivery > Delivery > General;Delivery
+LVMH Delivery > Delivery > Order Conformity;Delivery
+LVMH Delivery > Delivery > Price;Delivery
+LVMH Delivery > Delivery > Shipping Options;Delivery
+LVMH Delivery > Delivery > Sustainability;Delivery
+LVMH Delivery > Delivery > Time;Delivery
+LVMH Delivery > Free Gifts;Delivery
+LVMH Delivery > Free Gifts > General;Delivery
+LVMH Delivery > N/A;Delivery
+LVMH Delivery > Navigation;Delivery
+LVMH Delivery > Navigation > General;Delivery
+LVMH Delivery > Navigation > Product Discovery;Delivery
+LVMH Delivery > Omnichannel Experience;Delivery
+LVMH Delivery > Omnichannel Experience > Store Experience;Delivery
+LVMH Delivery > Other;Delivery
+LVMH Delivery > Other > General;Delivery
+LVMH Delivery > Packaging;Delivery
+LVMH Delivery > Packaging > General;Delivery
+LVMH Delivery > Packaging > Quality;Delivery
+LVMH Delivery > Packaging > Sustainability;Delivery
+LVMH Delivery > Packaging > Unboxing Experience;Delivery
+LVMH Delivery > Price;Delivery
+LVMH Delivery > Price > Discounts;Delivery
+LVMH Delivery > Price > General;Delivery
+LVMH Delivery > Product;Delivery
+LVMH Delivery > Product > Customization;Delivery
+LVMH Delivery > Product > Design;Delivery
+LVMH Delivery > Product > General;Delivery
+LVMH Delivery > Product > Origin;Delivery
+LVMH Delivery > Product > Quality;Delivery
+LVMH Delivery > Product > Size;Delivery
+LVMH Delivery > Stock;Delivery
+LVMH Delivery > Stock > General;Delivery
+LVMH Eshop > Brand;Eshop
+LVMH Eshop > Brand > General;Eshop
+LVMH Eshop > Checkout;Eshop
+LVMH Eshop > Checkout > Canceled Orders;Eshop
+LVMH Eshop > Checkout > Email Confirmation;Eshop
+LVMH Eshop > Checkout > General;Eshop
+LVMH Eshop > Checkout > Log In - Order Form;Eshop
+LVMH Eshop > Checkout > Payment Methods;Eshop
+LVMH Eshop > Checkout > Technical Payment Issues;Eshop
+LVMH Eshop > Customer Experience;Eshop
+LVMH Eshop > Customer Experience > General;Eshop
+LVMH Eshop > Customer Service;Eshop
+LVMH Eshop > Customer Service > General;Eshop
+LVMH Eshop > Free Gifts;Eshop
+LVMH Eshop > Free Gifts > General;Eshop
+LVMH Eshop > N/A;Eshop
+LVMH Eshop > Navigation;Eshop
+LVMH Eshop > Navigation > Device;Eshop
+LVMH Eshop > Navigation > General;Eshop
+LVMH Eshop > Navigation > Language;Eshop
+LVMH Eshop > Navigation > Product Discovery;Eshop
+LVMH Eshop > Navigation > Speed;Eshop
+LVMH Eshop > Navigation > Technical Issues;Eshop
+LVMH Eshop > Navigation > UX;Eshop
+LVMH Eshop > Omnichannel Experience;Eshop
+LVMH Eshop > Omnichannel Experience > General;Eshop
+LVMH Eshop > Omnichannel Experience > Store Experience;Eshop
+LVMH Eshop > Other;Eshop
+LVMH Eshop > Other > General;Eshop
+LVMH Eshop > Packaging;Eshop
+LVMH Eshop > Packaging > General;Eshop
+LVMH Eshop > Packaging > Gift;Eshop
+LVMH Eshop > Price;Eshop
+LVMH Eshop > Price > Discounts;Eshop
+LVMH Eshop > Price > General;Eshop
+LVMH Eshop > Product;Eshop
+LVMH Eshop > Product > Assortment;Eshop
+LVMH Eshop > Product > General;Eshop
+LVMH Eshop > Product > Quality;Eshop
+LVMH Eshop > Return Policy;Eshop
+LVMH Eshop > Return Policy > General;Eshop
+LVMH Eshop > Return Policy > Refund;Eshop
+LVMH Eshop > Shipping;Eshop
+LVMH Eshop > Shipping > General;Eshop
+LVMH Eshop > Shipping > Price;Eshop
+LVMH Eshop > Shipping > Sustainability;Eshop
+LVMH Eshop > Shipping > Time;Eshop
+LVMH Eshop > Stock;Eshop
+LVMH Eshop > Stock > General;Eshop
+LVMH Eshop > Website Design;Eshop
+LVMH Eshop > Website Design > General;Eshop
+LVMH Retail > After Sales;Retail
+LVMH Retail > After Sales > General;Retail
+LVMH Retail > After Sales > Repair;Retail
+LVMH Retail > After Sales > Return;Retail
+LVMH Retail > Brand;Retail
+LVMH Retail > Brand > Competitor;Retail
+LVMH Retail > Brand > General;Retail
+LVMH Retail > Checkout;Retail
+LVMH Retail > Checkout > General;Retail
+LVMH Retail > Checkout > Payment Methods;Retail
+LVMH Retail > Checkout > Tax Refunds;Retail
+LVMH Retail > Checkout > Waiting Time;Retail
+LVMH Retail > Client Advisor;Retail
+LVMH Retail > Client Advisor > Attitude;Retail
+LVMH Retail > Client Advisor > Expertise;Retail
+LVMH Retail > Client Advisor > Proactivity;Retail
+LVMH Retail > Client Advisor > Relationship;Retail
+LVMH Retail > Client Advisor > Teamwork;Retail
+LVMH Retail > Customer Experience;Retail
+LVMH Retail > Customer Experience > General;Retail
+LVMH Retail > Hospitality;Retail
+LVMH Retail > Hospitality > Free Gifts;Retail
+LVMH Retail > Hospitality > Refreshment;Retail
+LVMH Retail > N/A;Retail
+LVMH Retail > Omni Channel Experience;Retail
+LVMH Retail > Omni Channel Experience > Appointment Services;Retail
+LVMH Retail > Omni Channel Experience > Click-and-collect;Retail
+LVMH Retail > Omni Channel Experience > Customer Service;Retail
+LVMH Retail > Omni Channel Experience > Online;Retail
+LVMH Retail > Omni Channel Experience > Remote Sale;Retail
+LVMH Retail > Omni Channel Experience > Reservation;Retail
+LVMH Retail > Omni Channel Experience > Shipping;Retail
+LVMH Retail > Omni Channel Experience > In-Store Services;Retail
+LVMH Retail > Packaging;Retail
+LVMH Retail > Packaging > Design;Retail
+LVMH Retail > Packaging > General;Retail
+LVMH Retail > Packaging > Wrapping Options;Retail
+LVMH Retail > Price;Retail
+LVMH Retail > Price > Discounts;Retail
+LVMH Retail > Price > General;Retail
+LVMH Retail > Product;Retail
+LVMH Retail > Product > Assortment;Retail
+LVMH Retail > Product > Customization;Retail
+LVMH Retail > Product > Design;Retail
+LVMH Retail > Product > General;Retail
+LVMH Retail > Product > Quality;Retail
+LVMH Retail > Stock;Retail
+LVMH Retail > Stock > General;Retail
+LVMH Retail > Store Environment;Retail
+LVMH Retail > Store Environment > Atmosphere;Retail
+LVMH Retail > Store Environment > Cleanliness;Retail
+LVMH Retail > Store Environment > Display;Retail
+LVMH Retail > Store Environment > General;Retail
+LVMH Retail > Welcome;Retail
+LVMH Retail > Welcome > General Greeting;Retail
+LVMH Retail > Welcome > Security Staff;Retail
+LVMH Retail > Welcome > Staff Availability;Retail
+LVMH Retail > Welcome > Waiting Time;Retail
+LVMH Service > After Sales;Service
+LVMH Service > After Sales > Exchange;Service
+LVMH Service > After Sales > General;Service
+LVMH Service > After Sales > Refund;Service
+LVMH Service > After Sales > Return Policy;Service
+LVMH Service > Brand;Service
+LVMH Service > Brand > General;Service
+LVMH Service > Checkout;Service
+LVMH Service > Checkout > General;Service
+LVMH Service > Client Advisor;Service
+LVMH Service > Client Advisor > Attitude;Service
+LVMH Service > Client Advisor > Expertise;Service
+LVMH Service > Client Advisor > Relationship;Service
+LVMH Service > Customer Experience;Service
+LVMH Service > Customer Experience > General;Service
+LVMH Service > Customization;Service
+LVMH Service > Customization > Follow Up;Service
+LVMH Service > Customization > General;Service
+LVMH Service > Customization > Price;Service
+LVMH Service > Customization > Quality;Service
+LVMH Service > Customization > Time;Service
+LVMH Service > Delivery;Service
+LVMH Service > Delivery > General;Service
+LVMH Service > Hospitality;Service
+LVMH Service > Hospitality > General;Service
+LVMH Service > N/A;Service
+LVMH Service > Omnichannel Experience;Service
+LVMH Service > Omnichannel Experience > Appointment Services;Service
+LVMH Service > Omnichannel Experience > Call Center;Service
+LVMH Service > Omnichannel Experience > Click and Collect;Service
+LVMH Service > Omnichannel Experience > Online;Service
+LVMH Service > Omnichannel Experience > Reservation;Service
+LVMH Service > Other;Service
+LVMH Service > Other > General;Service
+LVMH Service > Packaging;Service
+LVMH Service > Packaging > General;Service
+LVMH Service > Price;Service
+LVMH Service > Price > General;Service
+LVMH Service > Product;Service
+LVMH Service > Product > Design;Service
+LVMH Service > Product > General;Service
+LVMH Service > Product > Quality;Service
+LVMH Service > Repair;Service
+LVMH Service > Repair > Follow Up;Service
+LVMH Service > Repair > General;Service
+LVMH Service > Repair > Price;Service
+LVMH Service > Repair > Quality;Service
+LVMH Service > Repair > Time;Service
+LVMH Service > Stock;Service
+LVMH Service > Stock > General;Service
+LVMH Service > Store Environment;Service
+LVMH Service > Store Environment > General;Service
+LVMH Service > Welcome;Service
+LVMH Service > Welcome > General Greetings;Service
+LVMH Service > Welcome > Security Staff;Service
+LVMH Service > Welcome > Staff Availability;Service
+LVMH Service > Welcome > Waiting Time;Service

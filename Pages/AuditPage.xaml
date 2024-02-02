@@ -1,0 +1,232 @@
+﻿<Page x:Class="SupervisionApp.AuditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SupervisionApp"
+      mc:Ignorable="d" 
+
+      Title="AuditPage"
+      Background="Transparent">
+    
+    <Border CornerRadius="10" Background="White">
+        <ScrollViewer Margin="0,5,0,5">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    x:Name="nbCommentTextBlock"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{Binding nbComments, StringFormat='Nombre de commentaires pouvant être audités : {0}'}" 
+                    Style="{StaticResource BasicText}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="10"/>
+
+                <StackPanel
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="10">
+
+                    <TextBlock
+                        x:Name="selectCommentsBlock"
+                        Text="Choisissez un nombre de commentaires à auditer : " 
+                        Style="{StaticResource BasicText}"/>
+
+                    <TextBox 
+                        x:Name="numberInput" 
+                        Width="35"
+                        Height="17"
+                        PreviewTextInput="NumberInput_PreviewTextInput"
+                        Margin="10, 0, 0, 0" 
+                        FontFamily="3ds Light" FontSize="14"/>
+
+                    <Button
+                        x:Name="validationBtn"
+                        Width="17"
+                        Height="17"
+                        Margin="10, 0, 0, 0" 
+                        Click="ValidationBtn_Click">
+                        <Image Source="/Pages/validIcon.png"/>
+                    </Button>
+                </StackPanel>
+
+                <!-- Affichage des commentaires et Validation/correction -->
+
+                <!-- Afficher SurveyName -->
+                <TextBlock
+                    x:Name="SurveyNameTxt"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource BasicText}"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Margin="10"
+                    Visibility="Collapsed"/>
+
+                <StackPanel
+                    x:Name="ButtonsStckP"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Visibility="Collapsed">
+
+                    <Button
+                        x:Name="ValidateBtn"
+                        Style="{StaticResource RoundedButtonShadow}"
+                        Background="#FF05C310"
+                        Content="Validate"
+                        FontSize="14"
+                        FontFamily="3dsLight"
+                        Click="ValidateBtn_Click"
+                        Margin="10"/>
+
+                    <Button
+                        x:Name="UndoBtn"
+                        Style="{StaticResource RoundedButtonShadow}"
+                        Background="DarkOrange"
+                        Content="Undo"
+                        FontFamily="3dsLight"
+                        FontSize="14"
+                        Click="UndoBtn_Click"
+                        Margin="10"/>
+                </StackPanel>
+
+                <!-- Afficher TranslatedComment -->
+                <TextBlock
+                    x:Name="TranslatedCommentTxt"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    HorizontalAlignment="Left"
+                    MaxWidth="500"
+                    TextWrapping="Wrap"
+                    Style="{StaticResource BasicText}"
+                    Margin="10,15,10,10"
+                    Visibility="Collapsed"/>
+
+                <Border
+                    x:Name="CommentBorder"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Width="500"
+                    Background="LightGray"
+                    CornerRadius="10"
+                    Padding="10"
+                    Margin="10"
+                    Visibility="Collapsed">
+
+                    <!-- Afficher Comment -->
+                    <TextBlock
+                        x:Name="CommentTxt"
+                        TextWrapping="Wrap"
+                        Visibility="Collapsed"
+                        Style="{StaticResource BasicText}"
+                        FontStyle="Italic"
+                        Margin="0,10,10,10"/>
+                </Border>
+
+
+                <TextBlock 
+                    x:Name="TagsTxt"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Visibility="Collapsed"
+                    HorizontalAlignment="Left"
+                    Text="Tags : "
+                    Style="{StaticResource BasicText}"
+                    FontWeight="Bold"
+                    Margin="10"/>
+
+                <!-- On ajoutera un bouton pour chaque tag dans ce StackPanel depuis le code C# -->
+                <StackPanel
+                    x:Name="TagsStckP"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Left"
+                    Margin="5"
+                    Visibility="Collapsed">
+                </StackPanel>
+
+                <Button
+                    x:Name="AddTagBtn"
+                    Grid.Row="6"
+                    HorizontalAlignment="Right"
+                    Style="{DynamicResource RoundedButton}"
+                    Height="30"
+                    Width="110"
+                    BorderBrush="DarkRed"
+                    Background="Red"
+                    Click="AddTagBtn_Click"
+                    Visibility="Collapsed">
+                    <TextBlock
+                        Background="Red"
+                        Foreground="White"
+                        FontWeight="DemiBold"
+                        Style="{DynamicResource BasicText}">
+                        Add a tag
+                    </TextBlock>
+                </Button>
+
+                <ComboBox
+                    x:Name="TagsCbBox"
+                    SelectionChanged="TagsCbBox_SelectionChanged"
+                    Grid.Row="7"
+                    Visibility="Collapsed"
+                    Width="350"
+                    Height="30"
+                    HorizontalAlignment="Left"
+                    FontFamily="3ds Light" 
+                    FontSize="16"
+                    Margin="5"/>
+
+                <StackPanel 
+                    x:Name="endStack"
+                    Grid.Row="7"
+                    Visibility="Collapsed"
+                    Margin="10">
+                    <Button
+                        Grid.Row="7"
+                        x:Name="SaveFileBtn"
+                        Style="{StaticResource RoundedButton}"
+                        Content="Save file"
+                        FontSize="14"
+                        FontFamily="3dsLight"
+                        Click="SaveFileBtn_Click"
+                        Height="30"
+                        Margin="10"/>
+
+                    <Button
+                        x:Name="ReturnMenuBtn"
+                        Style="{StaticResource RoundedButton}"
+                        Content="Return to menu"
+                        FontSize="14"
+                        FontFamily="3dsLight"
+                        Click="ReturnMenuBtn_Click"
+                        Height="30"
+                        Margin="10"/>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Border>
+</Page>
